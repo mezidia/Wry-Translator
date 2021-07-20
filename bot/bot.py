@@ -1,6 +1,7 @@
 import logging
 
 from aiogram import Bot, Dispatcher, executor, types
+from script import get_translated_text
 
 API_TOKEN = ''
 
@@ -17,15 +18,13 @@ async def send_welcome(message: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.")
+    await message.reply("Hi!\nI'm Wry Translator!\nTo start using just type your text.")
 
 
 @dp.message_handler()
-async def echo(message: types.Message):
-    # old style:
-    # await bot.send_message(message.chat.id, message.text)
-
-    await message.answer(message.text)
+async def translate(message: types.Message):
+    translated_text = get_translated_text(message.text)
+    await message.answer(translated_text)
 
 
 if __name__ == '__main__':
