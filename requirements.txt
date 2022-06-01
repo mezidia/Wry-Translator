@@ -10,7 +10,7 @@ click==8.0.1
 colorama==0.4.4
 idna==3.2
 langdetect==1.0.9
-libretranslatepy==2.1.1
+libretranslatepy==2.1.2
 lxml==4.6.3
 multidict==5.1.0
 pytz==2021.1
