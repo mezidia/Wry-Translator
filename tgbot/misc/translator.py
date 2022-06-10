@@ -1,6 +1,8 @@
 from googletrans import Translator, LANGUAGES
 
 from random import choice
+from typing import Union
+
 
 class TranslatorAPI:
     previous_code: str = ''
@@ -10,7 +12,9 @@ class TranslatorAPI:
         self.translator = Translator()
         self.final_dest = 'uk'
 
-    def translate(self, text: str, dest: str) -> str:
+    def translate(self, text: str, dest: Union[str, list]) -> str:
+        if isinstance(dest, list):
+            dest = dest[0]
         translation = self.translator.translate(text, dest=dest)
         return translation.text
     
