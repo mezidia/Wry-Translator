@@ -18,7 +18,7 @@
 
 ## Motivation :exclamation:
 
-There are some funny videos on YouTube about Warcraft. There author translates words from Russian to Russian through many other languages. And the context is lost. My friend, @Dmytrenko-Roman, wanted to create a bot that can translate words wry.
+There are some [funny videos](https://www.youtube.com/watch?v=-OS8Bu8rWpg&list=PLuijmg4NP_dIOTOyLShoUzLEO8HpALKo5) on YouTube about Warcraft. There author translates words from Russian to Russian through many other languages. And the context is lost. My friend, @Dmytrenko-Roman, wanted to create a bot that can translate words wry.
 
 ## Screenshots :camera:
 
